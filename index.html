@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Student Enrollment Form</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <!-- jquery ajax is added to javascript -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <!-- bootstrap is added for styling -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <!-- jpdb is added to reduce the code -->
+    <script src="https://login2explore.com/jpdb/resources/js/0.0.4/jpdb-commons.js"></script>
+</head>
+<body>
+    <div class="container">
+        <!-- h1 tag for title and is aligned to center -->
+        <h1 align="center">Welcome to Student Enrollment Form</h1>
+        <!-- form tag of method post type -->
+        <form id="form" method="POST">
+            <div class="form-group">
+                <span><label for="rollno">Roll No:</label><label id="rollnoMsg"></label></span>
+                <!-- input tag for taking the roll no as input -->
+                <input type="text" class="form-control" name="rollno" id="rollno" placeholder="Enter Roll No"
+                    required>
+            </div>
+            <div class="form-group">
+                <span><label for="name">Name:</label></span>
+                <!-- input tag for taking the name as input -->
+                <input type="text" class="form-control" name="name" id="name" placeholder="Enter name" required>
+            </div>
+            <div class="form-group">
+                <span><label for="class">Class:</label></span>
+                <!-- input tag for taking the class as input from user -->
+                <input type="text" class="form-control" name="class" id="class" placeholder="Enter Class" required>
+            </div>
+            <div class="form-group">
+                <span><label for="BirthDate">Birth-Date:</label></span>
+                <!-- input tag for taking the birth date as input from user -->
+                <input type="date" class="form-control" name="BirthDate" id="BirthDate" placeholder="Enter Birth-Date"
+                    required>
+            </div>
+
+            <div class="form-group">
+                <span><label for="address">Address:</label></span>
+                <!-- input tag for taking the adress input from user -->
+                <input type="text" class="form-control" name="address" id="address" placeholder="Enter address"
+                    required>
+            </div>
+            <div class="form-group">
+                <span><label for="EnrollmentDate">Enrollment-Date:</label></span>
+                <!-- input tag for taking the enrollment date input from user -->
+                <input type="date" class="form-control" name="EnrollmentDate" id="EnrollmentDate"
+                    placeholder="Enter Enrollment-Date" required>
+            </div>
+            <br>
+            <!-- input of button type when clicked will call the savedata method in the index.js  -->
+            <input type="button" class="btn btn-primary" id="savebutton" value="Save" onclick=Savedata()>
+            <!-- input of button type when clicked will call the Updatedata method in the index.js -->
+            <input type="button" class="btn btn-primary" id="update" value="Update" onclick=Updatedata()>
+            <!-- input of button type when clicked will call the restform method in the index.js -->
+            <input type="button" class="btn btn-danger" id="reset" value="Reset" onclick=resetForm()>
+
+        </form>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <script src="https://login2explore.com/jpdb/resources/js/0.0.4/jpdb-commons.js"></script>
+    <!-- index.js file -->
+    <script src="index.js"></script>
+</body>
+
+</html>
